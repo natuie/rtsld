@@ -1,0 +1,1 @@
+/usr/bin/node /usr/share/rtsld/src/client.js "$@"
