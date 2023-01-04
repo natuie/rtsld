@@ -21,18 +21,18 @@ function deleteFolder(path) {
   }
 }
 
-function log(type, message, attach){
-  let msg = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss') + ' ';
+function log(type, message, attach) {
+  let msg = sd.format(new Date(), "YYYY-MM-DD HH:mm:ss") + " ";
   if (message == null) {
     message = "NULL point";
     type = -1;
   }
   if (type == 0) {
     type = "[INFO]";
-  } else if(type == 1) {
+  } else if (type == 1) {
     type = "[WARN]".yellow;
     message = message.yellow;
-  } else if(type == 2) {
+  } else if (type == 2) {
     type = "[SUCCESS]".green;
     message = message.green;
   } else if (type == 3) {
@@ -41,24 +41,24 @@ function log(type, message, attach){
   } else if (type == -1) {
     type = "[ERROR]".red;
     message = message.red;
-  } 
-  msg += type + ' ';
+  }
+  msg += type + " ";
   if (attach != null) {
-    msg += attach + ': ';
+    msg += attach + ": ";
   }
   msg += message;
   return msg;
 }
 
-function prints(type, message, attach){
+function prints(type, message, attach) {
   console.log(log(type, message, attach));
 }
 
-function print(type, message){
+function print(type, message) {
   prints(type, message, null);
 }
 
-function echo(message){
+function echo(message) {
   prints(0, message, null);
 }
 
@@ -67,5 +67,5 @@ module.exports = {
   log,
   print,
   prints,
-  echo
+  echo,
 };
