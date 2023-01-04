@@ -18,6 +18,13 @@ Use command `rtsld --help` to view usage
 
 `rtsld` is client, and `rtsld-server` is server
 
+#### For example: 
+```
+rtsld-server --local-path /home/naucye/server
+rtsld --local-path /home/naucye/client -s # Client sync Server
+rtsld --local-path /home/naucye/client -m "Hi, world" # Send message
+```
+
 ## Tips
 The maximum size of the file transferred in the current version is 160Kb. Only one-way synchronization is supported, but the direction can be changed. The next version will be repaired.If there is a bug, please send the email to `naucye@qq.com`.
 
