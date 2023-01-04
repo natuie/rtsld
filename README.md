@@ -16,6 +16,8 @@ bash setup.sh -i
 ## Usage
 Use command `rtsld --help` to view usage
 
+`rtsld` is client, and `rtsld-server` is server
+
 ## Tips
 The maximum size of the file transferred in the current version is 160Kb. Only one-way synchronization is supported, but the direction can be changed. The next version will be repaired.If there is a bug, please send the email to `naucye@qq.com`.
 
